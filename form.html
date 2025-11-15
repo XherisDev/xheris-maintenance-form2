@@ -1,0 +1,945 @@
+<!-- XHERIS MAINTENANCE FORM - FINAL VERSION WITH DIRECT FILE UPLOAD -->
+<!-- Field: UfCrm1761595595394 -->
+
+<style>
+    .mf-container{font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+        background: linear-gradient(135deg, #2D1B4E 0%, #1a0f2e 100%);
+        padding: 2rem;
+        margin: 2rem 0;
+        border-radius: 24px;
+        min-height: 600px;}.mf-container *{box-sizing: border-box;}.mf-form-wrapper{max-width: 900px;
+        margin: 0 auto;
+        background: white;
+        border-radius: 24px;
+        padding: 3rem;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        min-height: 400px;}.mf-breadcrumb{display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-bottom: 1.5rem;
+        font-size: 0.9rem;
+        color: #64748b;
+        flex-wrap: wrap;}.mf-breadcrumb a{color: #8B5CF6;
+        text-decoration: none;
+        font-weight: 500;
+        cursor: pointer;}.mf-breadcrumb span{color: #94a3b8;}.mf-progress-bar{height: 8px;
+        background: #e2e8f0;
+        border-radius: 999px;
+        margin-bottom: 2rem;
+        overflow: hidden;}.mf-progress-fill{height: 100%;
+        background: linear-gradient(135deg, #8B5CF6, #E91E8C);
+        transition: width 0.3s ease;}.mf-container h2{font-size: 1.75rem;
+        color: #1e293b;
+        margin-bottom: 0.5rem;
+        margin-top: 0;}.mf-subtitle{color: #64748b;
+        margin-bottom: 2rem;}.mf-grid{display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 1rem;
+        margin-bottom: 2rem;}.mf-card{background: white;
+        border: 2px solid #e2e8f0;
+        border-radius: 16px;
+        padding: 1.5rem 1rem;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.75rem;}.mf-card:hover{border-color: #8B5CF6;
+        transform: translateY(-4px);
+        box-shadow: 0 8px 24px rgba(139, 92, 246, 0.15);}.mf-card.selected{border-color: #8B5CF6;
+        background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(233, 30, 140, 0.1));}.mf-card-icon{font-size: 2.5rem;}.mf-card-name{font-size: 0.9rem;
+        font-weight: 500;
+        color: #1e293b;
+        line-height: 1.3;}.mf-list{display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+        margin-bottom: 2rem;}.mf-list-item{padding: 1rem 1.5rem;
+        border: 2px solid #e2e8f0;
+        border-radius: 12px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        gap: 1rem;}.mf-list-item:hover{border-color: #8B5CF6;
+        background: rgba(139, 92, 246, 0.05);}.mf-list-item.selected{border-color: #8B5CF6;
+        background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(233, 30, 140, 0.1));}.mf-radio{width: 20px;
+        height: 20px;
+        border: 2px solid #cbd5e1;
+        border-radius: 50%;
+        position: relative;
+        flex-shrink: 0;}.mf-list-item.selected .mf-radio::after{content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 10px;
+        height: 10px;
+        background: #8B5CF6;
+        border-radius: 50%;}.mf-list-text{font-weight: 500;
+        color: #1e293b;}.mf-alert{padding: 1.5rem;
+        border-radius: 12px;
+        margin-bottom: 2rem;
+        display: flex;
+        align-items: flex-start;
+        gap: 1rem;}.mf-alert-critical{background: linear-gradient(135deg, #ef4444, #dc2626);
+        color: white;}.mf-alert-icon{font-size: 2rem;
+        flex-shrink: 0;}.mf-alert h3{margin-bottom: 0.5rem;
+        color: white;
+        margin-top: 0;}.mf-alert p{color: rgba(255, 255, 255, 0.95);
+        margin: 0;}.mf-form-group{margin-bottom: 1.5rem;}.mf-form-group label{display: block;
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+        color: #1e293b;}.mf-form-group input,
+    .mf-form-group textarea,
+    .mf-form-group select{width: 100%;
+        padding: 1rem;
+        border: 2px solid #e2e8f0;
+        border-radius: 12px;
+        font-size: 1rem;
+        font-family: inherit;}.mf-form-group textarea{min-height: 120px;
+        resize: vertical;}.mf-form-group input:focus,
+    .mf-form-group textarea:focus,
+    .mf-form-group select:focus{outline: none;
+        border-color: #8B5CF6;
+        box-shadow: 0 0 0 4px rgba(139, 92, 246, 0.1);}.mf-upload-area{border: 3px dashed #cbd5e1;
+        border-radius: 16px;
+        padding: 3rem;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin-bottom: 1rem;}.mf-upload-area:hover{border-color: #8B5CF6;
+        background: rgba(139, 92, 246, 0.03);}.mf-upload-area.dragover{border-color: #8B5CF6;
+        background: rgba(139, 92, 246, 0.1);}.mf-upload-icon{font-size: 4rem;
+        margin-bottom: 1rem;}.mf-file-preview{display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        gap: 1rem;
+        margin-bottom: 1.5rem;}.mf-file-item{position: relative;
+        aspect-ratio: 1;
+        border-radius: 12px;
+        overflow: hidden;
+        border: 2px solid #e2e8f0;}.mf-file-item img,
+    .mf-file-item video{width: 100%;
+        height: 100%;
+        object-fit: cover;}.mf-file-remove{position: absolute;
+        top: 0.5rem;
+        right: 0.5rem;
+        background: #ef4444;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        width: 28px;
+        height: 28px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+        line-height: 1;
+        z-index: 10;}.mf-button-group{display: flex;
+        gap: 1rem;
+        margin-top: 2rem;}.mf-btn{flex: 1;
+        padding: 1rem 2rem;
+        border: none;
+        border-radius: 12px;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;}.mf-btn-back{background: #f1f5f9;
+        color: #475569;}.mf-btn-back:hover{background: #e2e8f0;}.mf-btn-primary{background: linear-gradient(135deg, #8B5CF6, #E91E8C);
+        color: white;
+        box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3);}.mf-btn-primary:hover{transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(139, 92, 246, 0.4);}.mf-btn-primary:disabled{opacity: 0.5;
+        cursor: not-allowed;
+        transform: none;}.mf-loading-overlay{position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.8);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;}.mf-loading-content{background: white;
+        padding: 2rem 3rem;
+        border-radius: 16px;
+        text-align: center;}.mf-spinner{width: 50px;
+        height: 50px;
+        border: 4px solid #e2e8f0;
+        border-top-color: #8B5CF6;
+        border-radius: 50%;
+        animation: mfSpin 1s linear infinite;
+        margin: 0 auto 1rem;}@keyframes mfSpin{to{transform: rotate(360deg);}}@media (max-width: 768px){.mf-container{padding: 1rem;}.mf-form-wrapper{padding: 1.5rem;}.mf-grid{grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));}.mf-button-group{flex-direction: column-reverse;}}</style>
+
+<div class="mf-container">
+    <div class="mf-form-wrapper">
+        <div class="mf-breadcrumb" id="mfBreadcrumb">Home</div>
+        <div class="mf-progress-bar">
+            <div class="mf-progress-fill" id="mfProgressFill" style="width: 0%"></div>
+        </div>
+        <div id="mfContent"></div>
+    </div>
+</div>
+
+<script>
+(function(){'use strict';
+    
+    // ⚠️ CONFIGURATION ⚠️
+    const BITRIX24_WEBHOOK = 'https://xheris.bitrix24.com/rest/1/k7ms9de3jghedw2b/';
+    const FILES_FIELD = 'UfCrm1761595595394';
+    const VERCEL_UPLOAD_ENDPOINT = 'REPLACE_WITH_YOUR_VERCEL_URL/api/upload-to-bitrix';
+    // 👆 IMPORTANT: After deploying to Vercel, update this with your actual URL
+    // Example: https://xheris-form.vercel.app/api/upload-to-bitrix
+    
+    console.log('🚀 XHERIS Maintenance Report System');
+    console.log('📎 File upload via:', VERCEL_UPLOAD_ENDPOINT);
+
+    window.mfState = {
+        step: 0,
+        property: '',
+        propertyName: '',
+        category: '',
+        categoryName: '',
+        location: '',
+        locationName: '',
+        issue: '',
+        files: [],
+        comments: '',
+        contact: {
+            name: '', 
+            email: '', 
+            phone: '', 
+            address: '',
+            role: '',
+            hasPropertyManager: '',
+            propertyManagerInfo: ''
+        }
+    };
+
+    window.MF_PROPERTIES = [
+        {id: 'house', emoji: '🏠', name: 'House'},
+        {id: 'apartment', emoji: '🏢', name: 'Apartment'},
+        {id: 'commercial', emoji: '🏬', name: 'Commercial'},
+        {id: 'office', emoji: '💼', name: 'Office'},
+        {id: 'airbnb', emoji: '🏨', name: 'Airbnb'},
+        {id: 'social_housing', emoji: '🏘️', name: 'Social Housing'},
+        {id: 'land', emoji: '🌾', name: 'Land'}
+    ];
+
+    window.MF_LOCATIONS = [
+        {id: 'living_room', emoji: '🛋️', name: 'Living Room', category: 'living'},
+        {id: 'dining_room', emoji: '🍽️', name: 'Dining Room', category: 'living'},
+        {id: 'kitchen', emoji: '🍳', name: 'Kitchen', category: 'living'},
+        {id: 'bedroom', emoji: '🛏️', name: 'Bedroom', category: 'living'},
+        {id: 'master_bedroom', emoji: '👑', name: 'Master Bedroom', category: 'living'},
+        {id: 'guest_room', emoji: '🛌', name: 'Guest Room', category: 'living'},
+        {id: 'kids_room', emoji: '🧸', name: "Children's Room", category: 'living'},
+        {id: 'study', emoji: '📚', name: 'Study/Office', category: 'living'},
+        {id: 'bathroom', emoji: '🚿', name: 'Bathroom', category: 'bathroom'},
+        {id: 'master_bathroom', emoji: '🛁', name: 'Master Bathroom', category: 'bathroom'},
+        {id: 'guest_bathroom', emoji: '🚽', name: 'Guest Bathroom', category: 'bathroom'},
+        {id: 'toilet', emoji: '🚻', name: 'Separate Toilet', category: 'bathroom'},
+        {id: 'laundry', emoji: '🧺', name: 'Laundry Room', category: 'utility'},
+        {id: 'utility_room', emoji: '🔧', name: 'Utility Room', category: 'utility'},
+        {id: 'hallway', emoji: '🚪', name: 'Hallway/Corridor', category: 'circulation'},
+        {id: 'entrance', emoji: '🏠', name: 'Entrance/Foyer', category: 'circulation'},
+        {id: 'staircase', emoji: '🪜', name: 'Staircase', category: 'circulation'},
+        {id: 'landing', emoji: '📐', name: 'Landing', category: 'circulation'},
+        {id: 'closet', emoji: '👔', name: 'Closet/Wardrobe', category: 'storage'},
+        {id: 'storage', emoji: '📦', name: 'Storage Room', category: 'storage'},
+        {id: 'pantry', emoji: '🥫', name: 'Pantry', category: 'storage'},
+        {id: 'basement', emoji: '🏚️', name: 'Basement', category: 'levels'},
+        {id: 'cellar', emoji: '🍷', name: 'Cellar', category: 'levels'},
+        {id: 'attic', emoji: '🏠', name: 'Attic/Loft', category: 'levels'},
+        {id: 'mezzanine', emoji: '🏗️', name: 'Mezzanine', category: 'levels'},
+        {id: 'garage', emoji: '🚗', name: 'Garage', category: 'garage'},
+        {id: 'parking', emoji: '🅿️', name: 'Parking Space', category: 'garage'},
+        {id: 'carport', emoji: '🏕️', name: 'Carport', category: 'garage'},
+        {id: 'balcony', emoji: '🌆', name: 'Balcony', category: 'outdoor'},
+        {id: 'terrace', emoji: '☀️', name: 'Terrace', category: 'outdoor'},
+        {id: 'patio', emoji: '🪴', name: 'Patio', category: 'outdoor'},
+        {id: 'garden', emoji: '🌳', name: 'Garden/Yard', category: 'outdoor'},
+        {id: 'roof', emoji: '🏠', name: 'Roof', category: 'outdoor'},
+        {id: 'facade', emoji: '🧱', name: 'Exterior Facade', category: 'outdoor'},
+        {id: 'lobby', emoji: '🏛️', name: 'Lobby/Reception', category: 'common'},
+        {id: 'elevator', emoji: '🛗', name: 'Elevator/Lift', category: 'common'},
+        {id: 'common_hallway', emoji: '🚶', name: 'Common Hallway', category: 'common'},
+        {id: 'mailroom', emoji: '📬', name: 'Mailroom', category: 'common'},
+        {id: 'common_laundry', emoji: '🧼', name: 'Common Laundry', category: 'common'},
+        {id: 'bike_storage', emoji: '🚲', name: 'Bike Storage', category: 'common'},
+        {id: 'trash_area', emoji: '🗑️', name: 'Trash/Recycling Area', category: 'common'},
+        {id: 'other', emoji: '📍', name: 'Other Location', category: 'other'}
+    ];
+
+    window.MF_CATEGORIES = {
+        safety: [
+            {id: 'gas_leak', emoji: '⚠️', name: 'Gas Leak', issues: ['Smell of gas', 'Gas detector alarm', 'Visible damage to gas pipe', 'Gas appliance malfunction']},
+            {id: 'fire_hazard', emoji: '🔥', name: 'Fire Hazard', issues: ['Electrical sparking', 'Overheating appliance', 'Smoke detection', 'Damaged electrical wiring']},
+            {id: 'water_damage', emoji: '💧', name: 'Major Water Damage', issues: ['Burst pipe', 'Flooding', 'Ceiling leak', 'Water coming through walls']},
+            {id: 'structural', emoji: '🏗️', name: 'Structural Damage', issues: ['Cracks in walls/ceiling', 'Sagging ceiling', 'Foundation issues', 'Structural instability']}
+        ],
+        indoor: [
+            {id: 'plumbing', emoji: '🚰', name: 'Plumbing', issues: ['Leaking faucet/tap', 'Clogged drain', 'Low water pressure', 'Running toilet', 'No hot water', 'Pipe leak', 'Water heater issue']},
+            {id: 'electrical', emoji: '⚡', name: 'Electrical', issues: ['Outlet not working', 'Light fixture issue', 'Tripped breaker', 'Flickering lights', 'Power outage in area', 'Switch malfunction']},
+            {id: 'heating_cooling', emoji: '🌡️', name: 'Heating/Cooling', issues: ['AC not cooling', 'Heater not working', 'Thermostat malfunction', 'Strange noises', 'Radiator leak', 'Temperature control issue']},
+            {id: 'appliances', emoji: '🔌', name: 'Appliances', issues: ['Refrigerator not cooling', 'Oven not heating', 'Dishwasher leaking', 'Washing machine issue', 'Dryer not working', 'Built-in appliance fault']},
+            {id: 'doors_windows', emoji: '🚪', name: 'Doors/Windows', issues: ['Door won\'t close properly', 'Window broken/cracked', 'Lock malfunction', 'Draft/air leak', 'Handle broken', 'Hinge issue']},
+            {id: 'flooring', emoji: '🪵', name: 'Flooring', issues: ['Loose tiles', 'Squeaky floor', 'Carpet damage', 'Water damage to floor', 'Laminate lifting', 'Cracked tiles']}
+        ],
+        outdoor: [
+            {id: 'roof', emoji: '🏠', name: 'Roof', issues: ['Leak', 'Missing tiles/shingles', 'Gutter issues', 'Flashing damage', 'Blocked drainage']},
+            {id: 'exterior', emoji: '🧱', name: 'Exterior', issues: ['Siding damage', 'Paint peeling', 'Cracked foundation', 'Window seal broken', 'Exterior wall crack']},
+            {id: 'landscape', emoji: '🌳', name: 'Landscaping', issues: ['Drainage problem', 'Tree damage', 'Fence repair', 'Sprinkler issue', 'Overgrown vegetation']}
+        ],
+        other: [
+            {id: 'pest', emoji: '🐜', name: 'Pest Control', issues: ['Insects (ants, cockroaches, etc.)', 'Rodents (mice, rats)', 'Termites', 'Wildlife intrusion', 'Bed bugs']},
+            {id: 'security', emoji: '🔒', name: 'Security', issues: ['Lock replacement needed', 'Alarm system issue', 'Camera/intercom issue', 'Access control problem', 'Broken entry system']},
+            {id: 'cleaning', emoji: '🧹', name: 'Cleaning/Maintenance', issues: ['Deep cleaning needed', 'Mold/mildew removal', 'Post-construction cleanup', 'General maintenance', 'Odor issue']}
+        ]
+    };
+
+    window.mfRenderStep = function() {
+        const steps = [
+            window.mfRenderProperty,
+            window.mfRenderCategory,
+            window.mfRenderLocation,
+            window.mfRenderIssue,
+            window.mfRenderPhotosComments,
+            window.mfRenderContact
+        ];
+        
+        if (window.mfState.step >= 0 && window.mfState.step < steps.length) {
+            steps[window.mfState.step]();
+            window.mfUpdateProgress();
+            window.mfUpdateBreadcrumb();
+        }
+    };
+
+    window.mfUpdateProgress = function() {
+        const progress = (window.mfState.step / 5) * 100;
+        const el = document.getElementById('mfProgressFill');
+        if (el) el.style.width = progress + '%';
+    };
+
+    window.mfRenderProperty = function() {
+        const content = document.getElementById('mfContent');
+        if (!content) return;
+        
+        let html = '<h2>What type of property?</h2><p class="mf-subtitle">Select your property type to get started</p><div class="mf-grid">';
+        for (let i = 0; i < window.MF_PROPERTIES.length; i++) {
+            const p = window.MF_PROPERTIES[i];
+            html += `<div class="mf-card" onclick="window.mfSelectProperty('${p.id}','${p.name}',event)">
+                <div class="mf-card-icon">${p.emoji}</div>
+                <div class="mf-card-name">${p.name}</div></div>`;
+        }
+        html += '</div>';
+        content.innerHTML = html;
+    };
+
+    window.mfSelectProperty = function(id, name, evt) {
+        const cards = document.querySelectorAll('.mf-card');
+        for (let i = 0; i < cards.length; i++) cards[i].classList.remove('selected');
+        const card = evt ? evt.currentTarget : event.currentTarget;
+        card.classList.add('selected');
+        window.mfState.property = id;
+        window.mfState.propertyName = name;
+        setTimeout(() => {
+            window.mfState.step = 1;
+            window.mfRenderStep();
+        }, 300);
+    };
+
+    window.mfRenderCategory = function() {
+        const content = document.getElementById('mfContent');
+        if (!content) return;
+
+        let html = '<h2>What needs attention?</h2><p class="mf-subtitle">Select the type of maintenance needed</p>';
+        html += '<div class="mf-alert mf-alert-critical"><div class="mf-alert-icon">🚨</div><div><h3>Emergency?</h3><p>For gas leaks, flooding, or immediate safety issues, call emergency services first, then report here.</p></div></div>';
+        
+        html += '<h3 style="color:#ef4444;margin:1.5rem 0 1rem;">🔴 Safety & Urgent</h3><div class="mf-grid">';
+        for (let i = 0; i < window.MF_CATEGORIES.safety.length; i++) {
+            const c = window.MF_CATEGORIES.safety[i];
+            html += `<div class="mf-card" onclick="window.mfSelectCategory('${c.id}','${c.name}','safety',event)">
+                <div class="mf-card-icon">${c.emoji}</div><div class="mf-card-name">${c.name}</div></div>`;
+        }
+        html += '</div>';
+
+        html += '<h3 style="margin:1.5rem 0 1rem;">🏠 Indoor Issues</h3><div class="mf-grid">';
+        for (let i = 0; i < window.MF_CATEGORIES.indoor.length; i++) {
+            const c = window.MF_CATEGORIES.indoor[i];
+            html += `<div class="mf-card" onclick="window.mfSelectCategory('${c.id}','${c.name}','indoor',event)">
+                <div class="mf-card-icon">${c.emoji}</div><div class="mf-card-name">${c.name}</div></div>`;
+        }
+        html += '</div>';
+
+        html += '<h3 style="margin:1.5rem 0 1rem;">🌳 Outdoor Issues</h3><div class="mf-grid">';
+        for (let i = 0; i < window.MF_CATEGORIES.outdoor.length; i++) {
+            const c = window.MF_CATEGORIES.outdoor[i];
+            html += `<div class="mf-card" onclick="window.mfSelectCategory('${c.id}','${c.name}','outdoor',event)">
+                <div class="mf-card-icon">${c.emoji}</div><div class="mf-card-name">${c.name}</div></div>`;
+        }
+        html += '</div>';
+
+        html += '<h3 style="margin:1.5rem 0 1rem;">🔧 Other Services</h3><div class="mf-grid">';
+        for (let i = 0; i < window.MF_CATEGORIES.other.length; i++) {
+            const c = window.MF_CATEGORIES.other[i];
+            html += `<div class="mf-card" onclick="window.mfSelectCategory('${c.id}','${c.name}','other',event)">
+                <div class="mf-card-icon">${c.emoji}</div><div class="mf-card-name">${c.name}</div></div>`;
+        }
+        html += '</div>';
+        
+        html += '<div class="mf-button-group"><button class="mf-btn mf-btn-back" onclick="window.mfState.step=0;window.mfRenderStep()">Back</button></div>';
+
+        content.innerHTML = html;
+    };
+
+    window.mfSelectCategory = function(id, name, type, evt) {
+        const cards = document.querySelectorAll('.mf-card');
+        for (let i = 0; i < cards.length; i++) cards[i].classList.remove('selected');
+        const card = evt ? evt.currentTarget : event.currentTarget;
+        card.classList.add('selected');
+        window.mfState.category = id;
+        window.mfState.categoryName = name;
+        window.mfState.categoryType = type;
+        setTimeout(() => {
+            window.mfState.step = 2;
+            window.mfRenderStep();
+        }, 300);
+    };
+
+    window.mfRenderLocation = function() {
+        const content = document.getElementById('mfContent');
+        if (!content) return;
+        
+        let html = '<h2>Where is this located?</h2><p class="mf-subtitle">Select the specific location in your property</p>';
+        
+        const categories = {
+            living: '🏠 Living Spaces',
+            bathroom: '🚿 Bathrooms',
+            utility: '🔧 Utility Rooms',
+            circulation: '🚪 Circulation Areas',
+            storage: '📦 Storage',
+            levels: '🏚️ Levels',
+            garage: '🚗 Garage & Parking',
+            outdoor: '🌳 Outdoor Areas',
+            common: '🏢 Common Areas',
+            other: '📍 Other'
+        };
+        
+        for (const [catKey, catName] of Object.entries(categories)) {
+            const locs = window.MF_LOCATIONS.filter(l => l.category === catKey);
+            if (locs.length === 0) continue;
+            
+            html += `<h3 style="margin:1.5rem 0 1rem;">${catName}</h3><div class="mf-grid">`;
+            for (let i = 0; i < locs.length; i++) {
+                const l = locs[i];
+                html += `<div class="mf-card" onclick="window.mfSelectLocation('${l.id}','${l.name}',event)">
+                    <div class="mf-card-icon">${l.emoji}</div>
+                    <div class="mf-card-name">${l.name}</div></div>`;
+            }
+            html += '</div>';
+        }
+        
+        html += '<div class="mf-button-group">' +
+            '<button class="mf-btn mf-btn-back" onclick="window.mfState.step=1;window.mfRenderStep()">Back</button></div>';
+        content.innerHTML = html;
+    };
+
+    window.mfSelectLocation = function(id, name, evt) {
+        const cards = document.querySelectorAll('.mf-card');
+        for (let i = 0; i < cards.length; i++) cards[i].classList.remove('selected');
+        const card = evt ? evt.currentTarget : event.currentTarget;
+        card.classList.add('selected');
+        window.mfState.location = id;
+        window.mfState.locationName = name;
+        setTimeout(() => {
+            window.mfState.step = 3;
+            window.mfRenderStep();
+        }, 300);
+    };
+
+    window.mfRenderIssue = function() {
+        const allCats = window.MF_CATEGORIES.safety.concat(
+            window.MF_CATEGORIES.indoor, 
+            window.MF_CATEGORIES.outdoor, 
+            window.MF_CATEGORIES.other
+        );
+        const cat = allCats.find(c => c.id === window.mfState.category);
+        
+        if (!cat || !cat.issues) {
+            window.mfState.step = 4;
+            window.mfRenderStep();
+            return;
+        }
+        
+        const content = document.getElementById('mfContent');
+        if (!content) return;
+        
+        let html = `<h2>What's the issue?</h2>`;
+        html += `<p class="mf-subtitle">${cat.name} in ${window.mfState.locationName}</p>`;
+        html += '<div class="mf-list">';
+        
+        for (let i = 0; i < cat.issues.length; i++) {
+            html += `<div class="mf-list-item" onclick="window.mfSelectIssue('${cat.issues[i].replace(/'/g, "\\'")}',event)">
+                <div class="mf-radio"></div>
+                <div class="mf-list-text">${cat.issues[i]}</div></div>`;
+        }
+        
+        html += '</div><div class="mf-button-group">' +
+            '<button class="mf-btn mf-btn-back" onclick="window.mfState.step=2;window.mfRenderStep()">Back</button></div>';
+        content.innerHTML = html;
+    };
+
+    window.mfSelectIssue = function(issue, evt) {
+        const items = document.querySelectorAll('.mf-list-item');
+        for (let i = 0; i < items.length; i++) items[i].classList.remove('selected');
+        const item = evt ? evt.currentTarget : event.currentTarget;
+        item.classList.add('selected');
+        window.mfState.issue = issue;
+        setTimeout(() => {
+            window.mfState.step = 4;
+            window.mfRenderStep();
+        }, 300);
+    };
+
+    window.mfRenderPhotosComments = function() {
+        const content = document.getElementById('mfContent');
+        if (!content) return;
+        
+        content.innerHTML = '<h2>Photos & Additional Details</h2><p class="mf-subtitle">Help us understand the issue better</p>' +
+            '<div class="mf-upload-area" id="mfUploadArea">' +
+            '<div class="mf-upload-icon">📸</div><h3 style="margin:0 0 0.5rem 0;color:#1e293b;">Upload Photos/Videos</h3>' +
+            '<p style="margin:0;color:#64748b;">Click or drag files here (Max 10MB each)</p></div>' +
+            '<div class="mf-file-preview" id="mfFilePreview"></div>' +
+            '<input type="file" id="mfFileInput" multiple accept="image/*,video/*" style="display:none;">' +
+            '<div class="mf-form-group"><label>Additional Comments</label>' +
+            '<textarea id="mfComments" placeholder="Please describe the issue in detail..."></textarea></div>' +
+            '<div class="mf-button-group">' +
+            '<button class="mf-btn mf-btn-back" onclick="window.mfState.step=3;window.mfRenderStep()">Back</button>' +
+            '<button class="mf-btn mf-btn-primary" onclick="window.mfState.step=5;window.mfRenderStep()">Continue</button></div>';
+
+        const uploadArea = document.getElementById('mfUploadArea');
+        const fileInput = document.getElementById('mfFileInput');
+        const filePreview = document.getElementById('mfFilePreview');
+        
+        uploadArea.onclick = () => fileInput.click();
+        
+        uploadArea.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            uploadArea.classList.add('dragover');
+        });
+        
+        uploadArea.addEventListener('dragleave', () => {
+            uploadArea.classList.remove('dragover');
+        });
+        
+        uploadArea.addEventListener('drop', (e) => {
+            e.preventDefault();
+            uploadArea.classList.remove('dragover');
+            handleFiles(e.dataTransfer.files);
+        });
+        
+        fileInput.onchange = (e) => handleFiles(e.target.files);
+        
+        document.getElementById('mfComments').oninput = (e) => {
+            window.mfState.comments = e.target.value;
+        };
+        
+        function handleFiles(files) {
+            for (let i = 0; i < files.length; i++) {
+                const file = files[i];
+                
+                if (file.size > 10 * 1024 * 1024) {
+                    alert(`File ${file.name} is too large (max 10MB)`);
+                    continue;
+                }
+                
+                window.mfState.files.push(file);
+                
+                const reader = new FileReader();
+                reader.onload = (e) => {
+                    const div = document.createElement('div');
+                    div.className = 'mf-file-item';
+                    
+                    if (file.type.startsWith('image/')) {
+                        div.innerHTML = `<img src="${e.target.result}" alt="${file.name}">
+                            <button class="mf-file-remove" onclick="window.mfRemoveFile(${window.mfState.files.length - 1})">×</button>`;
+                    } else if (file.type.startsWith('video/')) {
+                        div.innerHTML = `<video src="${e.target.result}"></video>
+                            <button class="mf-file-remove" onclick="window.mfRemoveFile(${window.mfState.files.length - 1})">×</button>`;
+                    }
+                    
+                    filePreview.appendChild(div);
+                };
+                reader.readAsDataURL(file);
+            }
+        }
+        
+        if (window.mfState.files.length > 0) {
+            filePreview.innerHTML = '';
+            window.mfState.files.forEach((file, index) => {
+                const reader = new FileReader();
+                reader.onload = (e) => {
+                    const div = document.createElement('div');
+                    div.className = 'mf-file-item';
+                    
+                    if (file.type.startsWith('image/')) {
+                        div.innerHTML = `<img src="${e.target.result}" alt="${file.name}">
+                            <button class="mf-file-remove" onclick="window.mfRemoveFile(${index})">×</button>`;
+                    } else if (file.type.startsWith('video/')) {
+                        div.innerHTML = `<video src="${e.target.result}"></video>
+                            <button class="mf-file-remove" onclick="window.mfRemoveFile(${index})">×</button>`;
+                    }
+                    
+                    filePreview.appendChild(div);
+                };
+                reader.readAsDataURL(file);
+            });
+        }
+    };
+
+    window.mfRemoveFile = function(index) {
+        window.mfState.files.splice(index, 1);
+        window.mfRenderPhotosComments();
+    };
+
+    window.mfRenderContact = function() {
+        const content = document.getElementById('mfContent');
+        if (!content) return;
+        
+        let savedCountryCode = '+32';
+        let savedPhone = '';
+        if (window.mfState.contact.phone) {
+            const parts = window.mfState.contact.phone.split(' ');
+            if (parts.length > 1) {
+                savedCountryCode = parts[0];
+                savedPhone = parts.slice(1).join(' ');
+            } else {
+                savedPhone = window.mfState.contact.phone;
+            }
+        }
+        
+        let html = '<h2>Contact Information</h2><p class="mf-subtitle">Final step - we\'ll use this to reach you</p>';
+        
+        html += '<div class="mf-form-group"><label>You are reporting as: *</label>' +
+            '<select id="mfRole">' +
+            '<option value="">-- Select your role --</option>' +
+            '<option value="landlord" ' + (window.mfState.contact.role === 'landlord' ? 'selected' : '') + '>🏠 Landlord/Property Owner</option>' +
+            '<option value="tenant" ' + (window.mfState.contact.role === 'tenant' ? 'selected' : '') + '>🔑 Tenant/Occupant</option>' +
+            '<option value="property_manager" ' + (window.mfState.contact.role === 'property_manager' ? 'selected' : '') + '>👔 Property Manager</option>' +
+            '<option value="maintenance" ' + (window.mfState.contact.role === 'maintenance' ? 'selected' : '') + '>🔧 Maintenance Staff</option>' +
+            '<option value="other" ' + (window.mfState.contact.role === 'other' ? 'selected' : '') + '>👤 Other</option>' +
+            '</select></div>';
+        
+        if (window.mfState.property === 'apartment') {
+            html += '<div class="mf-form-group"><label>Do you have a property manager? *</label>' +
+                '<select id="mfHasPropertyManager">' +
+                '<option value="">-- Select --</option>' +
+                '<option value="yes" ' + (window.mfState.contact.hasPropertyManager === 'yes' ? 'selected' : '') + '>✅ Yes</option>' +
+                '<option value="no" ' + (window.mfState.contact.hasPropertyManager === 'no' ? 'selected' : '') + '>❌ No</option>' +
+                '</select></div>';
+            
+            if (window.mfState.contact.hasPropertyManager === 'yes') {
+                html += '<div class="mf-form-group" id="mfPropertyManagerInfo"><label>Property Manager Contact Info</label>' +
+                    '<textarea id="mfPropertyManagerDetails" placeholder="Name, company, phone, email of your property manager" style="min-height:80px;">' + 
+                    (window.mfState.contact.propertyManagerInfo || '') + '</textarea></div>';
+            }
+        }
+        
+        html += '<div class="mf-form-group"><label>Full Name *</label>' +
+            '<input type="text" id="mfName" placeholder="John Doe" value="' + (window.mfState.contact.name || '') + '"></div>' +
+            '<div class="mf-form-group"><label>Email *</label>' +
+            '<input type="email" id="mfEmail" placeholder="john@example.com" value="' + (window.mfState.contact.email || '') + '"></div>' +
+            '<div class="mf-form-group"><label>Phone *</label>' +
+            '<div style="display:flex;gap:0.5rem;">' +
+            '<select id="mfCountryCode" style="width:220px;padding:1rem;border:2px solid #e2e8f0;border-radius:12px;font-size:1rem;background:white;">' +
+            '<option value="+32" ' + (savedCountryCode === '+32' ? 'selected' : '') + '>🇧🇪 Belgium (+32)</option>' +
+            '<option value="+33" ' + (savedCountryCode === '+33' ? 'selected' : '') + '>🇫🇷 France (+33)</option>' +
+            '<option value="+49" ' + (savedCountryCode === '+49' ? 'selected' : '') + '>🇩🇪 Germany (+49)</option>' +
+            '<option value="+31" ' + (savedCountryCode === '+31' ? 'selected' : '') + '>🇳🇱 Netherlands (+31)</option>' +
+            '<option value="+352" ' + (savedCountryCode === '+352' ? 'selected' : '') + '>🇱🇺 Luxembourg (+352)</option>' +
+            '<option value="+44" ' + (savedCountryCode === '+44' ? 'selected' : '') + '>🇬🇧 UK (+44)</option>' +
+            '<option value="+34" ' + (savedCountryCode === '+34' ? 'selected' : '') + '>🇪🇸 Spain (+34)</option>' +
+            '<option value="+39" ' + (savedCountryCode === '+39' ? 'selected' : '') + '>🇮🇹 Italy (+39)</option>' +
+            '<option value="+41" ' + (savedCountryCode === '+41' ? 'selected' : '') + '>🇨🇭 Switzerland (+41)</option>' +
+            '<option value="+43" ' + (savedCountryCode === '+43' ? 'selected' : '') + '>🇦🇹 Austria (+43)</option>' +
+            '<option value="+45" ' + (savedCountryCode === '+45' ? 'selected' : '') + '>🇩🇰 Denmark (+45)</option>' +
+            '<option value="+46" ' + (savedCountryCode === '+46' ? 'selected' : '') + '>🇸🇪 Sweden (+46)</option>' +
+            '<option value="+47" ' + (savedCountryCode === '+47' ? 'selected' : '') + '>🇳🇴 Norway (+47)</option>' +
+            '<option value="+48" ' + (savedCountryCode === '+48' ? 'selected' : '') + '>🇵🇱 Poland (+48)</option>' +
+            '<option value="+351" ' + (savedCountryCode === '+351' ? 'selected' : '') + '>🇵🇹 Portugal (+351)</option>' +
+            '<option value="+353" ' + (savedCountryCode === '+353' ? 'selected' : '') + '>🇮🇪 Ireland (+353)</option>' +
+            '<option value="+358" ' + (savedCountryCode === '+358' ? 'selected' : '') + '>🇫🇮 Finland (+358)</option>' +
+            '<option value="+30" ' + (savedCountryCode === '+30' ? 'selected' : '') + '>🇬🇷 Greece (+30)</option>' +
+            '<option value="+420" ' + (savedCountryCode === '+420' ? 'selected' : '') + '>🇨🇿 Czech Rep. (+420)</option>' +
+            '<option value="+36" ' + (savedCountryCode === '+36' ? 'selected' : '') + '>🇭🇺 Hungary (+36)</option>' +
+            '<option value="+40" ' + (savedCountryCode === '+40' ? 'selected' : '') + '>🇷🇴 Romania (+40)</option>' +
+            '<option value="+359" ' + (savedCountryCode === '+359' ? 'selected' : '') + '>🇧🇬 Bulgaria (+359)</option>' +
+            '<option value="+385" ' + (savedCountryCode === '+385' ? 'selected' : '') + '>🇭🇷 Croatia (+385)</option>' +
+            '<option value="+386" ' + (savedCountryCode === '+386' ? 'selected' : '') + '>🇸🇮 Slovenia (+386)</option>' +
+            '<option value="+421" ' + (savedCountryCode === '+421' ? 'selected' : '') + '>🇸🇰 Slovakia (+421)</option>' +
+            '<option value="+372" ' + (savedCountryCode === '+372' ? 'selected' : '') + '>🇪🇪 Estonia (+372)</option>' +
+            '<option value="+371" ' + (savedCountryCode === '+371' ? 'selected' : '') + '>🇱🇻 Latvia (+371)</option>' +
+            '<option value="+370" ' + (savedCountryCode === '+370' ? 'selected' : '') + '>🇱🇹 Lithuania (+370)</option>' +
+            '<option value="+356" ' + (savedCountryCode === '+356' ? 'selected' : '') + '>🇲🇹 Malta (+356)</option>' +
+            '<option value="+357" ' + (savedCountryCode === '+357' ? 'selected' : '') + '>🇨🇾 Cyprus (+357)</option>' +
+            '</select>' +
+            '<input type="tel" id="mfPhone" placeholder="123 456 789" style="flex:1;" value="' + savedPhone + '"></div>' +
+            '</div>' +
+            '<div class="mf-form-group"><label>Property Address *</label>' +
+            '<textarea id="mfAddress" placeholder="Street, Number, Postal Code, City" style="min-height:80px;">' + (window.mfState.contact.address || '') + '</textarea></div>' +
+            '<div class="mf-button-group">' +
+            '<button class="mf-btn mf-btn-back" onclick="window.mfState.step=4;window.mfRenderStep()">Back</button>' +
+            '<button class="mf-btn mf-btn-primary" onclick="window.mfSubmit()">Submit Request</button></div>';
+        
+        content.innerHTML = html;
+        
+        document.getElementById('mfRole').onchange = (e) => {
+            window.mfState.contact.role = e.target.value;
+        };
+        
+        if (window.mfState.property === 'apartment') {
+            document.getElementById('mfHasPropertyManager').onchange = (e) => {
+                window.mfState.contact.hasPropertyManager = e.target.value;
+                window.mfRenderContact();
+            };
+            
+            if (window.mfState.contact.hasPropertyManager === 'yes') {
+                document.getElementById('mfPropertyManagerDetails').oninput = (e) => {
+                    window.mfState.contact.propertyManagerInfo = e.target.value;
+                };
+            }
+        }
+        
+        document.getElementById('mfName').oninput = (e) => window.mfState.contact.name = e.target.value;
+        document.getElementById('mfEmail').oninput = (e) => window.mfState.contact.email = e.target.value;
+        document.getElementById('mfCountryCode').onchange = (e) => {
+            const countryCode = e.target.value;
+            const phone = document.getElementById('mfPhone').value;
+            window.mfState.contact.phone = countryCode + ' ' + phone;
+        };
+        document.getElementById('mfPhone').oninput = (e) => {
+            const countryCode = document.getElementById('mfCountryCode').value;
+            window.mfState.contact.phone = countryCode + ' ' + e.target.value;
+        };
+        document.getElementById('mfAddress').oninput = (e) => window.mfState.contact.address = e.target.value;
+    };
+
+    // PROFESSIONAL SUBMIT WITH VERCEL FILE UPLOAD
+    window.mfSubmit = async function() {
+        const {name, email, phone, address, role, hasPropertyManager, propertyManagerInfo} = window.mfState.contact;
+        
+        if (!name || !email || !phone || !address || !role) {
+            alert('Please fill all required fields!');
+            return;
+        }
+        
+        if (window.mfState.property === 'apartment' && !hasPropertyManager) {
+            alert('Please indicate if you have a property manager!');
+            return;
+        }
+        
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+            alert('Please enter a valid email address!');
+            return;
+        }
+        
+        const loading = document.createElement('div');
+        loading.className = 'mf-loading-overlay';
+        loading.innerHTML = '<div class="mf-loading-content"><div class="mf-spinner"></div>' +
+            '<h3>Submitting your maintenance request...</h3>' +
+            '<p>Your issue is being sent to XHERIS and will be distributed to our specialized contractors.</p></div>';
+        document.body.appendChild(loading);
+
+        try {
+            console.log('📤 Creating maintenance request...');
+            
+            // Build detailed comment
+            let detailedComment = `🏠 MAINTENANCE REQUEST\n\n`;
+            detailedComment += `📋 Property Type: ${window.mfState.propertyName}\n`;
+            detailedComment += `👤 Reporter: ${role.charAt(0).toUpperCase() + role.slice(1).replace('_', ' ')}\n`;
+            if (window.mfState.property === 'apartment') {
+                detailedComment += `🏢 Has Property Manager: ${hasPropertyManager === 'yes' ? 'Yes' : 'No'}\n`;
+                if (hasPropertyManager === 'yes' && propertyManagerInfo) {
+                    detailedComment += `📋 Manager Info: ${propertyManagerInfo}\n`;
+                }
+            }
+            detailedComment += `\n🔧 Category: ${window.mfState.categoryName}\n`;
+            detailedComment += `📍 Location: ${window.mfState.locationName}\n`;
+            detailedComment += `⚠️ Issue: ${window.mfState.issue}\n`;
+            detailedComment += `🏡 Address: ${address}\n\n`;
+            
+            if (window.mfState.comments) {
+                detailedComment += `💬 Additional Details:\n${window.mfState.comments}\n\n`;
+            }
+            
+            detailedComment += `\n---\nSubmitted via XHERIS Maintenance Report System`;
+
+            // Create contact
+            console.log('👤 Creating contact record...');
+            const contactData = {
+                fields: {
+                    NAME: name,
+                    PHONE: [{VALUE: phone, VALUE_TYPE: 'WORK'}],
+                    EMAIL: [{VALUE: email, VALUE_TYPE: 'WORK'}],
+                    ADDRESS: address,
+                    OPENED: 'Y'
+                }
+            };
+
+            const contactResponse = await fetch(BITRIX24_WEBHOOK + 'crm.contact.add', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify(contactData)
+            });
+
+            const contactResult = await contactResponse.json();
+            let contactId = null;
+            
+            if (contactResult.result) {
+                contactId = contactResult.result;
+                console.log('✅ Contact record created');
+            }
+
+            // Create deal
+            console.log('📝 Creating service request...');
+            
+            const dealFields = {
+                TITLE: `${window.mfState.categoryName} - ${window.mfState.locationName} - ${window.mfState.issue}`,
+                CONTACT_ID: contactId,
+                OPENED: 'Y',
+                BEGINDATE: new Date().toISOString().split('T')[0],
+                COMMENTS: detailedComment,
+                OPPORTUNITY: 0,
+                CURRENCY_ID: 'EUR'
+            };
+
+            const dealResponse = await fetch(BITRIX24_WEBHOOK + 'crm.deal.add', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({fields: dealFields})
+            });
+
+            const dealResult = await dealResponse.json();
+            
+            if (!dealResult.result) {
+                throw new Error(dealResult.error_description || 'Failed to create request');
+            }
+            
+            const dealId = dealResult.result;
+            console.log('✅ Service request created:', dealId);
+            
+            // Upload files via Vercel if any
+            if (window.mfState.files.length > 0) {
+                console.log(`📎 Uploading ${window.mfState.files.length} files via secure channel...`);
+                
+                const filesData = [];
+                for (let i = 0; i < window.mfState.files.length; i++) {
+                    const file = window.mfState.files[i];
+                    const base64 = await new Promise((resolve) => {
+                        const reader = new FileReader();
+                        reader.onload = (e) => {
+                            resolve(e.target.result.split(',')[1]);
+                        };
+                        reader.readAsDataURL(file);
+                    });
+                    
+                    filesData.push({
+                        name: file.name,
+                        size: file.size,
+                        type: file.type,
+                        data: base64
+                    });
+                }
+                
+                try {
+                    const uploadResponse = await fetch(VERCEL_UPLOAD_ENDPOINT, {
+                        method: 'POST',
+                        headers: {'Content-Type': 'application/json'},
+                        body: JSON.stringify({
+                            files: filesData,
+                            dealId: dealId,
+                            webhook: BITRIX24_WEBHOOK,
+                            fileField: FILES_FIELD
+                        })
+                    });
+                    
+                    const uploadResult = await uploadResponse.json();
+                    
+                    if (uploadResult.success) {
+                        console.log(`✅ ${uploadResult.uploaded} file(s) uploaded successfully`);
+                    } else {
+                        console.error('⚠️ File upload had issues:', uploadResult.error);
+                    }
+                } catch (uploadError) {
+                    console.error('⚠️ File upload error:', uploadError);
+                    // Continue even if file upload fails
+                }
+            }
+            
+            // Add timeline comment
+            try {
+                let timelineComment = detailedComment;
+                if (window.mfState.files.length > 0) {
+                    timelineComment += `\n\n📎 ATTACHED DOCUMENTATION (${window.mfState.files.length}):\n`;
+                    for (let i = 0; i < window.mfState.files.length; i++) {
+                        timelineComment += `${i + 1}. ${window.mfState.files[i].name} (${(window.mfState.files[i].size / 1024).toFixed(1)}KB)\n`;
+                    }
+                }
+                
+                await fetch(BITRIX24_WEBHOOK + 'crm.timeline.comment.add', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({
+                        fields: {
+                            ENTITY_ID: dealId,
+                            ENTITY_TYPE: 'deal',
+                            COMMENT: timelineComment.trim()
+                        }
+                    })
+                });
+            } catch (e) {
+                console.log('⚠️ Timeline update skipped');
+            }
+            
+            document.body.removeChild(loading);
+            
+            // PROFESSIONAL SUCCESS MESSAGE
+            let successMsg = `✅ Thank You! Your Request Has Been Received\n\n`;
+            successMsg += `Request ID: #${dealId}\n\n`;
+            successMsg += `Issue: ${window.mfState.categoryName}\n`;
+            successMsg += `Location: ${window.mfState.locationName}\n`;
+            successMsg += `Problem: ${window.mfState.issue}\n`;
+            successMsg += `Property: ${window.mfState.propertyName}\n`;
+            
+            if (window.mfState.files.length > 0) {
+                successMsg += `\nDocumentation: ${window.mfState.files.length} file(s) attached\n`;
+            }
+            
+            successMsg += `\nWe'll contact you soon at:\n`;
+            successMsg += `📧 ${email}\n`;
+            successMsg += `📞 ${phone}\n\n`;
+            successMsg += `Our specialized contractors will review your request and contact you within 24 hours to schedule the repair.`;
+            
+            alert(successMsg);
+            
+            setTimeout(() => location.reload(), 2000);
+            
+        } catch (error) {
+            document.body.removeChild(loading);
+            console.error('❌ Submission error:', error);
+            alert('We\'re sorry, there was an issue submitting your request.\n\nPlease try again or contact us directly at:\nsupport@xheris.com\n+32 123 456 789');
+        }
+    };
+
+    window.mfUpdateBreadcrumb = function() {
+        let html = '<a onclick="if(confirm(\'Start over?\'))location.reload()" style="cursor:pointer;">Home</a>';
+        if (window.mfState.categoryName) html += ` <span>›</span> <span>${window.mfState.categoryName}</span>`;
+        if (window.mfState.locationName) html += ` <span>›</span> <span>${window.mfState.locationName}</span>`;
+        const el = document.getElementById('mfBreadcrumb');
+        if (el) el.innerHTML = html;
+    };
+
+    window.mfRenderStep();
+})();
+</script>
